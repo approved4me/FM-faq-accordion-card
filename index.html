@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main>
+    <article>
+      <div class="card">
+        <div class="card_image">
+          <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration of a Woman and a giant display">
+          <div class="card_image_box"></div>
+        </div>
+        <h1>FAQ</h1>
+        <div class="aceordeon">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+          <div class="acordeon_element">
+            <div class="acordeon_question">How many team members can I invite?</div>
+            <div class="acordeon_answer">You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.</div>
+          </div>
+          <div class="acordeon_element">
+            <div class="acordeon_question">What is the maximum file upload size?</div>
+            <div class="acordeon_answer">No more than 2GB. All files in your account must fit your allotted storage
+              space.</div>
+          </div>
+          <div class="acordeon_element">
+            <div class="acordeon_question">How do I reset my password?</div>
+            <div class="acordeon_answer">Click “Forgot password” from the login page or “Change password” from your
+              profile page.
+              A reset link will be emailed to you.</div>
+          </div>
+          <div class="acordeon_element">
+            <div class="acordeon_question"> Can I cancel my subscription?</div>
+            <div class="acordeon_answer">Yes! Send us a message and we’ll process your request no questions asked.</div>
+          </div>
+          <div class="acordeon_element">
+            <div class="acordeon_question">Do you provide additional support?</div>
+            <div class="acordeon_answer">Chat and email support is available 24/7. Phone lines are open during normal
+              business hours.</div>
+          </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        </div>
+      </div>
+    </article>
+  </main>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/approved4me">approved4me</a>.
+  </footer>
 </body>
+
 </html>
