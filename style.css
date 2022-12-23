@@ -111,7 +111,19 @@ main {
   color: var(--primary-dark_blue);
 }
 
+.acordeon_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.8rem;
+  color: var(--neutral-very_dark_blue);
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--dividers-grayish_blue);
+}
 
+.acordeon_answer {
+  display: none;
+}
 
 /* FOOTER START */
 .attribution {
