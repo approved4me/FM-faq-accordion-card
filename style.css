@@ -66,19 +66,15 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background: linear-gradient(var(--bg-soft_violet), var(--bg-soft_blue));
-
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 12px;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
-
 main {
-  margin: 1rem;
+  margin: 1rem auto;
   max-width: 22rem;
   }
 
@@ -88,25 +84,23 @@ main {
   border-radius: 1rem;
   background-color: #fff;
   padding: 2rem;
-  
+  padding-bottom: 3rem;
+  margin-top: 8rem; 
 }
 
 .card_image {
-  position: relative;
-  margin-top: -56%;
-  
-  
+  margin-top: -10rem;
 }
 
 .card_image img {
-  filter: drop-shadow(0 2rem 0 rgba(100, 100, 100, 0.1) );
+  filter: drop-shadow(0 2rem 0 rgba(104, 98, 230, 0.1) );
   width: 100%;
 }
 
 .card h1 {
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   color: var(--primary-dark_blue);
 }
@@ -116,7 +110,8 @@ main {
   justify-content: space-between;
   align-items: baseline;
   font-size: 0.8rem;
-  color: var(--neutral-very_dark_blue);
+  color: var(--neutral-dark_blue);
+  font-weight: 700;
   padding-block: 1rem;
   border-bottom: 1px solid var(--dividers-grayish_blue);
 }
