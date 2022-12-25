@@ -106,6 +106,12 @@ main {
   color: var(--primary-dark_blue);
 }
 
+.aceordeon {
+}
+
+.acordeon_element {
+  border-bottom: 1px solid var(--dividers-grayish_blue);
+}
 .acordeon_question {
   display: flex;
   justify-content: space-between;
@@ -115,12 +121,32 @@ main {
   color: var(--neutral-dark_blue);
   font-weight: 700;
   padding-block: 1rem;
-  border-bottom: 1px solid var(--dividers-grayish_blue);
 }
 
 .acordeon_answer {
-  display: none;
+  position: relative;
+  height: 0;
+  opacity: 0;
+  transition: 350ms all;
+  overflow: hidden;
 }
+
+.arrow {
+  transition: 350ms all;
+}
+
+.acordeon_element.active .acordeon_answer {
+  height: auto;
+  opacity: 1;
+  padding-bottom: 1rem;
+}
+
+.acordeon_element.active .arrow {
+  transform: rotate(180deg);
+}
+
+
+
 
 /* FOOTER START */
 .attribution {
