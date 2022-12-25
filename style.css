@@ -95,7 +95,7 @@ main {
 
 .card_image img {
   filter: drop-shadow(0 2rem 0 rgba(104, 98, 230, 0.1) );
-  width: 100%;
+
 }
 
 .card h1 {
