@@ -110,7 +110,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 2rem;
+  gap: 1.5rem;
   font-size: 0.8rem;
   color: var(--neutral-dark_blue);
   font-weight: 700;
