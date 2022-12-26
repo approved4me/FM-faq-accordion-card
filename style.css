@@ -106,9 +106,6 @@ main {
   color: var(--primary-dark_blue);
 }
 
-.aceordeon {
-}
-
 .acordeon_element {
   border-bottom: 1px solid var(--dividers-grayish_blue);
 }
