@@ -2,11 +2,17 @@ const accordion = document.getElementsByClassName("acordeon_element");
 
 for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function () {
-        if (this.classList.contains("active")) {
-            this.classList.remove("active");
-        } else {
-            this.classList.toggle("active");
+        hideAll();
+        this.classList.toggle("active");
 
-        }
     })
 }
+
+function hideAll() {
+    for (i = 0; i < accordion.length; i++) {
+        accordion[i].classList.toggle("active", false);
+
+    }
+}
+
+// https://gomakethings.com/the-mysterious-second-argument-on-the-vanilla-js-classlist.toggle-method/
