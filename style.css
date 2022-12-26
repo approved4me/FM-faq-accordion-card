@@ -198,6 +198,19 @@ main {
   .card_image_wrapper {
     overflow: hidden;
   }
+
+  .card_image_wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    width: 40%;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: 100% 65%;
+  }
+
   .card_image {
     margin: 0;
     margin-left: -5rem;
