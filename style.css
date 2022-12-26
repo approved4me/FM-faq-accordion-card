@@ -63,7 +63,7 @@ h6 {
 /* MAIN START*/
 
 body {
-  max-width: 1440px;
+  max-width: 58rem;
   margin: 0 auto;
   background: linear-gradient(var(--bg-soft_violet), var(--bg-soft_blue));
   font-family: 'Kumbh Sans', sans-serif;
@@ -155,6 +155,7 @@ main {
 
 
 
+
 /* FOOTER START */
 .attribution {
   font-size: 11px;
@@ -166,11 +167,11 @@ main {
 }
 
 
-@media only screen and (min-width: 60rem) {
+@media only screen and (min-width: 55rem) {
 
   body {
     justify-content: center;
-    padding: 10rem;
+    padding: 1rem;
   }
 
   main {
@@ -179,12 +180,12 @@ main {
     }
 
   .card {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-    margin: auto;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
     gap: 1rem;
+    position: relative;
   }
 
   .card > * {
@@ -194,40 +195,24 @@ main {
   .card h1 {
     text-align: left;
   }
-
+  .card_image_wrapper {
+    overflow: hidden;
+  }
   .card_image {
-    position: relative;
-    margin: auto;
-    margin-left: -7rem;
-
+    margin: 0;
+    margin-left: -5rem;
   }
 
   .card_image img {
     filter: none;
-  
-  }
+   }
 
   .card_image_box {
     display: block;
     position: absolute;
-    z-index: 2;
+    left: -6rem;
+    top: 11rem;
+    transition: 350ms all;
   }
-
-
-  
-
-  .accordion_question:hover {
-    color: var(--primary-soft_red);
-  }
-
-  /* main {
-    width: 100%;
-    flex-direction: row;
-  } */
-
-  /* article {
-    display: flex;
-    /* align-items: center; */
-  } */
 
 }
