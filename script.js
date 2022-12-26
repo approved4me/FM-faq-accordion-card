@@ -1,10 +1,9 @@
-const accordion = document.getElementsByClassName("acordeon_element");
+const accordion = document.getElementsByClassName("accordion_element");
 
 for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function () {
         hideAll();
         this.classList.toggle("active");
-
     })
 }
 
