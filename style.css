@@ -134,6 +134,7 @@ main {
   transition: 350ms all;
 }
 
+/* ACTIVE CLASS */
 .accordion_element.active .accordion_answer {
   height: auto;
   opacity: 1;
@@ -144,6 +145,9 @@ main {
   transform: rotate(180deg);
 }
 
+.accordion_element.active .accordion_question {
+  color: var(--primary-dark_blue);
+}
 
 
 
@@ -155,4 +159,38 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width: 60rem) {
+
+  body {
+    justify-content: center;
+    padding: 10rem;
+  }
+
+  main {
+    margin: 1rem auto;
+    max-width: 100%;
+    }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card h1 {
+    text-align: left;
+  }
+
+  /* main {
+    width: 100%;
+    flex-direction: row;
+  } */
+
+  /* article {
+    display: flex;
+    /* align-items: center; */
+  } */
+
 }

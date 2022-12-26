@@ -10,7 +10,6 @@ for (i = 0; i < accordion.length; i++) {
 function hideAll() {
     for (i = 0; i < accordion.length; i++) {
         accordion[i].classList.toggle("active", false);
-
     }
 }
 
