@@ -98,6 +98,10 @@ main {
 
 }
 
+.card_image_box {
+  display: none;
+}
+
 .card h1 {
   text-align: center;
   margin-top: 3rem;
@@ -177,10 +181,43 @@ main {
   .card {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    gap: 1rem;
+  }
+
+  .card > * {
+    flex: 1
   }
 
   .card h1 {
     text-align: left;
+  }
+
+  .card_image {
+    position: relative;
+    margin: auto;
+    margin-left: -7rem;
+
+  }
+
+  .card_image img {
+    filter: none;
+  
+  }
+
+  .card_image_box {
+    display: block;
+    position: absolute;
+    z-index: 2;
+  }
+
+
+  
+
+  .accordion_question:hover {
+    color: var(--primary-soft_red);
   }
 
   /* main {
